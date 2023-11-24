@@ -2,3 +2,24 @@ perspective-viewer {
   height: 50vh;
   width: 700px;
 }
+
+
+.perspective-viewer-container {
+  height: 60vh; /* Adjust height as needed */
+  width: 100%; /* Take full width of container */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin-bottom: 24px;
+}
+
+/* Additional styling for specific elements or interactivity */
+.perspective-viewer-container .editable-cell {
+  background-color: #ffffcc; /* Highlight editable cells */
+}
+
+.perspective-viewer-container .selected-row {
+  background-color: #e6e6e6; /* Highlight selected rows */
+}

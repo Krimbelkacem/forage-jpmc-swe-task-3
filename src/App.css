@@ -1,49 +1,84 @@
+/* App.css */
+
+/* Global app container */
 .App {
   text-align: center;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
+/* Header styles */
 .App-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(12px + 2vmin);
   margin-bottom: 12px;
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+/* Hyperlink styles */
 .App-link {
   color: #61dafb;
+  /* Additional link styles can be added here if needed */
 }
 
+/* Main content container */
 .App-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 12px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
+/* Stream button styles */
 .Stream-button {
+  padding: 12px 24px;
   margin-bottom: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
 }
 
+.Stream-button:hover {
+  background-color: #0056b3;
+}
+
+.Stream-button:focus {
+  border-color: gray;
+  background-color: green;
+  color: white;
+}
+
+/* Graph container styles */
 .Graph {
   min-height: 50vh;
-  width: 700px;
-  margin-bottom: 12px;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-bottom: 24px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
 }
